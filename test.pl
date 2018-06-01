@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-my @person = ("Hans" , "Meier" , "Dr" , 42, 4622, "Egerkingen" );
+my @person = ("Hans" , "Meier" , "Dr" , 42, 4622, "Irgendwo" );
 my @personKopie = @person;
 my $lo = @person;
 my $lk = @personKopie;
