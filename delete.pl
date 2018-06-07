@@ -75,7 +75,7 @@ while (@nodeList) {
 #               &Telnet_NODE {$hostname,N,N);
                 &login_node ("$hostname");                                                                                                                                              # Login to the node and open a session
                 #---------------------------------------------------------------------------------------                Set terminal-length to zero to prevent a stop in the output
-                @cmd_output = &ciscoCommand ('terminal exec prompt timestamp','OFF');
+                @cmd_output = &ciscoCommand ('terminal exec prompt timestamp','OFF');  # OFF bewirkt das nicht im standartoutput ausgegeben wird
                 @cmd_output = &ciscoCommand ('terminal length 0','OFF');
                 #--------------------------------------------------------------------------------------- 
                 @cmd_output = &ciscoCommand ("sh version | i Model number",'OFF');
